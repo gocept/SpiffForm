@@ -1,0 +1,23 @@
+{
+  "name": "spiffform",
+  "version": "1.0.0",
+  "description": "Form builder",
+  "main": "spiffform/spiffform.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gocept/SpiffForm.git"
+  },
+  "author": "Daniel Havlik <dh@gocept.com> (https://gocept.com)",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/gocept/SpiffForm/issues"
+  },
+  "homepage": "https://github.com/gocept/SpiffForm#readme",
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "jquery-ui": "1.12"
+  }
+
+}

@@ -30,6 +30,6 @@ var translation = {
   'Select one': 'Bitte eines auswählen'
 };
 $(document).ready(function() {
-  $.i18n.load(translation);
+  $.sfi18n.load(translation);
 });
 
