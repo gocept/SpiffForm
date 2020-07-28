@@ -12,7 +12,20 @@ GNU Affero General Public License for more details.
 You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-!function(a){var b=Array.prototype.slice,c={dict:null,missingPattern:null,load:function(b,c){null!==this.dict?a.extend(this.dict,b):this.dict=b,c&&(this.missingPattern=c)},unload:function(){this.dict=null,this.missingPattern=null},_:function(a){if(dict=this.dict,dict&&dict.hasOwnProperty(a))a=dict[a];else if(null!==this.missingPattern)return this.printf(this.missingPattern,a);return args=b.call(arguments),args[0]=a,this.printf.apply(this,args)},printf:function(c,d){return arguments.length<2?c:(d=a.isArray(d)?d:b.call(arguments,1),c.replace(/([^%]|^)%(?:(\d+)\$)?s/g,function(a,b,c){return c?b+d[parseInt(c)-1]:b+d.shift()}).replace(/%%s/g,"%s"))}};a.fn._t=function(){return a(this).html(c._.apply(c,arguments))},a.sfi18n=c}(jQuery);
+(function(jQuery) {
+    var sfi18n = {};
+    var currTranslation = {};
+    sfi18n.load = function(dict) {
+        currTranslation = dict;
+    }
+    sfi18n._ = function(mess_key) {
+        if (currTranslation.hasOwnProperty(mess_key)) {
+            return currTranslation[mess_key];
+        }
+        return mess_key;
+    };
+    jQuery.sfi18n = sfi18n;
+})(jQuery);
 // ======================================================================
 // Utilities.
 // ======================================================================
@@ -1839,3 +1852,5 @@ var SpiffFormPanel = function(panel_div) {
         this._panel.slideDown("slow");
     };
 };
+
+export { SpiffForm, SpiffFormPanel, spiffform_elements, SpiffFormCheckbox, SpiffFormElement, SpiffFormJSONSerializer, _SpiffFormJSONSerializer};
