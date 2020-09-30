@@ -1,6 +1,6 @@
 {
   "name": "spiffform",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Form builder",
   "main": "spiffform/spiffform",
   "scripts": {
