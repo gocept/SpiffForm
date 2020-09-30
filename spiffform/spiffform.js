@@ -1308,7 +1308,7 @@ var SpiffFormRadioList = function() {
         var p = $('<p/>', options);
         var radio_count = $('.spiffform-item-radio').length;
         for (var i = 0, len = this._items.length; i < len; i++) {
-            radio = $('<input type="radio" value="' + i + '" name="radio' + radio_count + '"/>');
+            var radio = $('<input type="radio" value="' + i + '" name="radio' + radio_count + '"/>');
             radio.attr("checked", false);
             if (i == this._value) {
               radio.attr("checked", true);
@@ -1623,7 +1623,7 @@ var SpiffForm = function(div) {
             throw new Error('object is required argument');
 
         // Check if we have the needed property
-        if (!event.hasOwnProperty('clientX') && 
+        if (!event.hasOwnProperty('clientX') &&
             !event.hasOwnProperty('clientY')) {
           event = event.originalEvent;
         }

@@ -2,6 +2,12 @@
 Changes
 =======
 
+1.0.4
+=====
+
+- Bugfix: Add a missing variable declaration for radio buttons.
+
+
 1.0.3
 =====
 
