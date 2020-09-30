@@ -1,6 +1,6 @@
 var translation = {
   'Drag form elements from the right': 'Ziehen Sie Elemente von der rechten Seite',
-  'Drop here to remove': 'Hier loslassen um zu löschen',
+  'Drop here to remove': 'Hier loslassen zum Löschen',
   'Please correct the errors above.': 'Bitte korrigieren Sie die obigen Fehler.',
   'Label': 'Beschriftung',
   'Firstfield/Secondfield': 'Erstes/Zweites Feld',
@@ -17,15 +17,15 @@ var translation = {
   'Title': 'Titel',
   'Untitled': 'Ohne Titel',
   'Subtitle': 'Untertitel',
-  'Please fill out the form': 'Fomular bitte ausfüllen',
+  'Please fill out the form': 'Formular bitte ausfüllen',
   'Separator': 'Trennzeichen',
-  'Parts Field': 'Zweiteiliges feld',
+  'Parts Field': 'Zweiteiliges Feld',
   'Entry Field': 'Eingabefeld',
   'Text Area': 'Textfeld',
   'Button': 'Schaltfläche',
-  'Checkbox': 'Ankreuzfeld',
+  'Checkbox': 'Kontrollkästchen',
   'Date Picker': 'Datumsfeld',
-  'Dropdown List': 'Dropdownliste',
+  'Dropdown List': 'Dropdown-Liste',
   'Radio List': 'Optionsfeld',
   'Select one': 'Bitte eines auswählen'
 };
