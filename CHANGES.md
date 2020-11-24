@@ -1,6 +1,15 @@
 Changes
 =======
 
+1.1.0
+-----
+
+* Throw out sfi18n and use polyglot.js. Other message ids can be added through
+  using spiffformPolyglot, which is the Polyglot object.
+
+* Replaced locale js-files with jsons containing message id translation pairs.
+
+
 1.0.5
 -----
 

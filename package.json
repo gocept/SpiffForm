@@ -18,6 +18,7 @@
   "homepage": "https://github.com/gocept/SpiffForm#readme",
   "dependencies": {
     "jquery": "^3.1.0",
-    "jquery-ui": "1.12"
+    "jquery-ui": "1.12",
+    "node-polyglot": "^2.4.0"
   }
 }
